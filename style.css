@@ -22,7 +22,6 @@
     margin-top: 25px;
     display: flex;
     overflow: hidden;
-    gap: var(--gap);
 }
 
 #css-infinite-carousel .ticker {
@@ -35,6 +34,7 @@
     animation: slide var(--speed) linear infinite;
     animation-play-state: var(--play-state);
     animation-direction: var(--dir);
+    margin-right: var(--gap);
 }
 
 #css-infinite-carousel .ticker img {
