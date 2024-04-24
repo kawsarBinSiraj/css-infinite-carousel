@@ -19,6 +19,7 @@
     --dir: normal;
     --radius: 4px;
     --pad : 0px;
+    --grid-border : 1px;
     margin-top: 25px;
     display: flex;
     overflow: hidden;
@@ -34,11 +35,11 @@
     animation: slide var(--speed) linear infinite;
     animation-play-state: var(--play-state);
     animation-direction: var(--dir);
-    padding-right: var(--gap);
+    padding-right: calc(var(--gap) + (var(--grid-border) * 2));
 }
 
 #css-infinite-carousel .ticker img {
-    border: 1px solid #ddd;
+    border: var(--grid-border) solid #ddd;
     flex-shrink: 0;
     border-radius: var(--radius);
     padding: var(--pad);
